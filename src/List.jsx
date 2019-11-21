@@ -8,7 +8,6 @@ function List(props){
     <div onClick={() => props.selectUser(user.id)} key={id} > {user.name}  </div>
   ))
 
-  // TODO: ourUser information shows up in own div. 
 
   // mappedListitems = this.state.listItems.map((listItem, id) => <div className="describe" key={id}>
   //   <Checkbox className="checkbox" checked={listItem.checked} value={listItem._id} label='' onChange={(e) => this.handleChecked(e,id)} />
@@ -19,7 +18,6 @@ function List(props){
     <div>
       <h2>Humans In Your Area: </h2>
       <p>{props.ourUser}</p>
-      <p>Test User 1</p>
         {mappedUsers}
 
     </div>

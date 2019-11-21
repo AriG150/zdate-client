@@ -23,7 +23,7 @@ function App() {
 
   //Person you're signed in as
   useEffect(()=> {
-    axios.get('https://localhost:3001/users/ouruser')
+    axios.get('http://localhost:3001/users/ouruser')
       .then((res) => {
         setourUser(res.data)
       })
