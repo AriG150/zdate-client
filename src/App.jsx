@@ -3,7 +3,9 @@ import { BrowserRouter as Router,
         Route, 
         Link } from 'react-router-dom';
 import './App.css';
+import Homepage from './Homepage';
 import List from './List';
+import Profile from './Profile'
 
 function App() {
   // const [ourUser, setourUser] = useState([])
@@ -12,13 +14,10 @@ function App() {
 
   return (
     <div>
-      <h2>ZDate</h2>
-      <h5>So...the apocolypse happened. That sucked, right? </h5>
-      <h6>But, like, honestly, in between killing people and running away I still want....companionship...</h6>
-      <h6>Don't you?...</h6>
       <Router>
-      <Link to="/list"> Enter </Link>
-        <Route exact path="/list" render={ () => <List users={users} selectUser={setuserId}/> } />  
+        <Route exact path="/" render={ () => <Homepage  /> } />
+        <Route exact path="/list" render={ () => <List users={users} selectUser={setuserId}/> } /> 
+        <Route exact path="/profile" render={ () => <Profile users={users} /> } /> 
       </Router>
     </div>
   )
