@@ -5,9 +5,10 @@ function List(props){
   // const [ourUser, setourUser] = useState()
 
   const mappedUsers = props.users.map((user, id) => (
-    <div onClick={() => props.selectUser(user.id)} key={id} > {user}  </div>
+    <div onClick={() => props.selectUser(user.id)} key={id} > {user.name}  </div>
   ))
-
+    
+  console.log(props.users)
   console.log(props.ourUser)
 
   // mappedListitems = this.state.listItems.map((listItem, id) => <div className="describe" key={id}>
