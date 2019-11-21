@@ -17,7 +17,7 @@ function App() {
   useEffect(() => {
     axios.get('http://localhost:3001/users/')
       .then((res) => {
-        setUsers(res.data)
+        setUsers(res.data.foundUser)
       })
   }, [])
 
@@ -25,7 +25,7 @@ function App() {
   useEffect(()=> {
     axios.get('http://localhost:3001/users/ouruser')
       .then((res) => {
-        setourUser(res.data)
+        setourUser(res.data.foundUser[0])
       })
   }, [])
 
