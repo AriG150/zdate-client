@@ -1,5 +1,9 @@
 import React from 'react';
+
 import Skill from './Skill';
+
+import {Link} from 'react-router-dom';
+
 
 function Profile(props) {
 
@@ -38,6 +42,7 @@ function Profile(props) {
 
   return(
     <div>
+      <Link to="/list"> Back </Link>
       <div>
         {photo}
       </div>
