@@ -1,8 +1,8 @@
 import React from 'react';
 import Skill from './Skill';
 import {Link} from 'react-router-dom';
-// import './css/Profile.css';
-import './Profile.css'
+import './css/Profile.css';
+// import './Profile.css'
 import Chat from './Chat';
 import Buttons from './Buttons';
 
