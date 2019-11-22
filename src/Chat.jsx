@@ -2,6 +2,7 @@ import React from 'react'
 import './Profile.css';
 
 
+
 class Chat extends React.Component {
 
     state = {
