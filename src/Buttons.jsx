@@ -1,5 +1,5 @@
 import React from 'react'
-import './css/Profile.css';
+import './Profile.css';
 import { tsParenthesizedType } from '@babel/types';
 import Chat from './Chat';
 
