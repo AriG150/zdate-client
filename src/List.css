@@ -13,7 +13,6 @@
                         "sidebar main"
 }
 
-
 .logo{
   grid-area: logo;
 }
@@ -27,6 +26,7 @@
 .sidebar {
   grid-area: sidebar;
   justify-content: stretch;
+
 }
 
 .search{

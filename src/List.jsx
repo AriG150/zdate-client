@@ -37,11 +37,12 @@ function List(props){
       </div>
       <div className="sidebar">
         <form method="post">
-          <input type="checkbox" name="Weapon" id=""/> Weapon
-          <input type="checkbox" name="Cooking"/> Cooking
-          <input type="checkbox" name="First Aid" id=""/> First Aid
-          <input type="checkbox" name="Rope Abilities" id=""/> Rope Abilities
-          <input type="checkbox" name="KnifeAbilities" id=""/> Knife Abilities
+          Survival Skills <br/>
+          <input type="checkbox" name="Weapon" id=""/> Weapon <br/>
+          <input type="checkbox" name="Cooking"/> Cooking <br/>
+          <input type="checkbox" name="First Aid" id=""/> First Aid <br/>
+          <input type="checkbox" name="Rope Abilities" id=""/> Rope Abilities <br/>
+          <input type="checkbox" name="KnifeAbilities" id=""/> Knife Abilities <br/>
         </form>
         I am a sidebar. Rawr.
       </div>
