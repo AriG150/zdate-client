@@ -1,0 +1,38 @@
+/* .title {
+  text-align: center;
+} */
+
+
+.body {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 25vw 75vw;
+  grid-template-rows:  20vh 10vh 70vh;
+  grid-template-areas:  "logo    bio"
+                        "sidebar search"
+                        "sidebar main"
+}
+
+
+.logo{
+  grid-area: logo;
+}
+
+.bio {
+  grid-area: bio;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  justify-content: stretch;
+}
+
+.search{
+  grid-area: search;
+}
+.main {
+  grid-area: main;
+}
+
