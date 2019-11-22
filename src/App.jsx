@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import { BrowserRouter as Router,
-        Route, 
-        Link } from 'react-router-dom';
+        Route} from 'react-router-dom';
 import './App.css';
 import axios from 'axios';
 import Homepage from './Homepage';
@@ -29,11 +28,19 @@ function App() {
       })
   }, [])
 
+  //GET individual information 
+  useEffect(() => {
+    axios.get(`http://localhost:3001/users/${userId}`)
+      .then((res) => {
+        setuserId(res.data.foundUser)
+      })
+  }, [])
+
   return (
     <div>
       <Router>
         <Route exact path="/" render={ () => <Homepage  /> } />
-        <Route exact path="/list" render={ () => <List users={users} ourUser={ourUser} selectUser={setuserId} /> } /> 
+        <Route exact path="/list" render={ () => <List users={users} ourUser={ourUser} selectedUser={setuserId}/> } /> 
         <Route exact path="/profile" render={ () => <Profile users={users} /> } /> 
       </Router>
     </div>

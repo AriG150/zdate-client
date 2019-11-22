@@ -3,13 +3,18 @@ import axios from 'axios';
 
 function List(props){
   // const [ourUser, setourUser] = useState()
+  // const [userId, setuserId] = useState()
 
   const mappedUsers = props.users.map((user, id) => (
-    <div onClick={() => props.selectUser(user.id)} key={id} > {user.name}  </div>
+    <div onClick={() => props.selectedUser(user.id)} key={id} > 
+      <div>{user.photo}</div>
+      <div>{user.name}</div>   
+      <div>{user.bio}</div>
+      <hr/>
+    </div>
   ))
-    
-  console.log(props.users)
-  console.log(props.ourUser)
+
+
 
   // mappedListitems = this.state.listItems.map((listItem, id) => <div className="describe" key={id}>
   //   <Checkbox className="checkbox" checked={listItem.checked} value={listItem._id} label='' onChange={(e) => this.handleChecked(e,id)} />
