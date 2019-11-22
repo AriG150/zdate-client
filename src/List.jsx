@@ -8,7 +8,7 @@ function List(props){
 
   const mappedUsers = props.users.map((user, id) => (
     <div> 
-      <div> {user.photo}</div>
+      <div> <img src={user.photo} /></div>
       <div><Link onClick={() => props.setUserId(user._id)} key={id} to="/profile">{user.name} </Link></div>   
       <div>{user.bio}</div>
       <hr/>
