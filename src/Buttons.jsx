@@ -37,13 +37,18 @@ class Buttons extends React.Component {
         let sadbutt
         let happybutt
         if (this.state.sad == false) {
-            sadbutt = <button className={this.state.class2} onClick={this.changeSad}>☹</button>
+            sadbutt = <button className={this.state.class2} onClick={this.changeSad}>
+            <i class="material-icons md-48">sentiment_very_dissatisfied </i></button>
         } else {
-            sadbutt = <button className={this.state.class3} onClick={this.changeSad}>☹</button>
+            sadbutt = <button className={this.state.class3} onClick={this.changeSad}>
+                <i class="material-icons md-48">sentiment_very_dissatisfied </i>
+            </button>
         }
 
         if (this.state.happy == false) {
-            happybutt = <button className={this.state.class2} onClick={this.changeHappy}>☺</button>
+            happybutt = <button className={this.state.class2} onClick={this.changeHappy}>
+                <i class="material-icons md-48">sentiment_satisfied_alt</i>
+            </button>
         } else {
             happybutt = <Chat />
             sadbutt = <div></div>
