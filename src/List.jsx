@@ -1,14 +1,15 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 function List(props){
   // const [ourUser, setourUser] = useState()
   // const [userId, setuserId] = useState()
 
   const mappedUsers = props.users.map((user, id) => (
-    <div onClick={() => props.selectedUser(user.id)} key={id} > 
-      <div>{user.photo}</div>
-      <div>{user.name}</div>   
+    <div> 
+      <div> {user.photo}</div>
+      <div><Link onClick={() => props.setUserId(user._id)} key={id} to="/profile">{user.name} </Link></div>   
       <div>{user.bio}</div>
       <hr/>
     </div>

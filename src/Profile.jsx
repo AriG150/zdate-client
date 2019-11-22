@@ -1,7 +1,17 @@
 import React from 'react';
 
-function Profile() {
+function Profile(props) {
 
+  let content
+
+  if (!props.selectedUser) {
+    // there is no user yet
+    content = <p>No user selected!</p>
+  } else {
+    // we have a user!
+    content = <p>My name is {props.selectedUser.name}</p>
+  }
+  
 
   return(
     <div>
@@ -9,13 +19,7 @@ function Profile() {
         Profile Photo
       </div>
       <div>
-        Bio
-      </div>
-      <div>
-        stats
-      </div>
-      <div>
-        happy/unhappy face. 
+        {content}
       </div>
     </div>
 

@@ -10,7 +10,8 @@ import Profile from './Profile'
 function App() {
   const [ourUser, setourUser] = useState([])
   const [users, setUsers] = useState([])
-  const [userId, setuserId] = useState()
+  const [selectedUser, setSelectedUser] = useState({})
+  const [userId, setUserId] = useState(0)
 
   //Grab all users 
   useEffect(() => {
@@ -30,18 +31,21 @@ function App() {
 
   //GET individual information 
   useEffect(() => {
-    axios.get(`http://localhost:3001/users/${userId}`)
+    let url = `http://localhost:3001/users/${userId}`
+    console.log(url)
+    axios.get(url)
       .then((res) => {
-        setuserId(res.data.foundUser)
+        console.log(`This is the selected user: ${res.data.foundUser}`)
+        setSelectedUser(res.data.foundUser)
       })
-  }, [])
+  }, [userId])
 
   return (
     <div>
       <Router>
         <Route exact path="/" render={ () => <Homepage  /> } />
-        <Route exact path="/list" render={ () => <List users={users} ourUser={ourUser} selectedUser={setuserId}/> } /> 
-        <Route exact path="/profile" render={ () => <Profile users={users} /> } /> 
+        <Route exact path="/list" render={ () => <List users={users} ourUser={ourUser} setUserId={setUserId}/> } /> 
+        <Route exact path="/profile" render={ () => <Profile selectedUser={selectedUser} /> } /> 
       </Router>
     </div>
   )
