@@ -1,7 +1,8 @@
 import React from 'react';
 import Skill from './Skill';
 import {Link} from 'react-router-dom';
-import './css/Profile.css';
+// import './css/Profile.css';
+import './Profile.css'
 import Chat from './Chat';
 import Buttons from './Buttons';
 
@@ -50,7 +51,7 @@ function Profile(props) {
   }
 
   return(
-    <div>
+    <div className="profile">
       <Link to="/list"> Back </Link>
       
       {/* <i class="material-icons md-48">sentiment_satisfied_alt</i>  */}
@@ -58,8 +59,16 @@ function Profile(props) {
       <div>
         {photo}
       </div>
+      <br />
+        <br/>
       <div>
         {content}
+        <br />
+        <br/>
+        <br/>
+        Skills I Bring to the Table:
+        {/* <br/> */}
+        {/* <br/> */}
         <ul>
           {skills}
         </ul>
