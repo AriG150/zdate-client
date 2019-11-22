@@ -1,9 +1,7 @@
 .homepage { 
-  /* display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center; */
   text-align: center;
   margin: auto;
   line-height: 50px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 3em;
 }

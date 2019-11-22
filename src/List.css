@@ -5,9 +5,11 @@
 
 .body {
   display: grid;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.5em;
   min-height: 100vh;
   grid-template-columns: 25vw 75vw;
-  grid-template-rows:  20vh 10vh 70vh;
+  grid-template-rows:  15vh 10vh 70vh;
   grid-template-areas:  "logo    bio"
                         "sidebar search"
                         "sidebar main"
@@ -23,16 +25,31 @@
   justify-content: flex-end;
 }
 
+.profilePic{
+  border-radius: 50%
+}
 .sidebar {
   grid-area: sidebar;
-  justify-content: stretch;
+  /* justify-content: stretch; */
 
 }
 
 .search{
   grid-area: search;
 }
+
+.form{
+  text-align: left;
+  justify-self: center;
+}
+
 .main {
   grid-area: main;
+}
+
+.userInfo {
+  display: flex;
+  border: 1px solid black;
+  width: 40%;
 }
 
