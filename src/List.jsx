@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import './css/List.css';
 
 function List(props){
   // const [ourUser, setourUser] = useState()
@@ -16,22 +17,18 @@ function List(props){
   ))
 
 
-
-  // mappedListitems = this.state.listItems.map((listItem, id) => <div className="describe" key={id}>
-  //   <Checkbox className="checkbox" checked={listItem.checked} value={listItem._id} label='' onChange={(e) => this.handleChecked(e,id)} />
-  //   <Link className="mapped-items" to={`/profile/${listItem._id}/adventure/${this.props.match.params.cName}`}>{listItem.name}</Link>  
-
-
   return(
     <div>
-      <h2>Humans In Your Area: </h2>
-      <div>
-        <img src={props.ourUser.photo} alt=""/>
+      <h2 className="title">Humans In Your Area: </h2>
+      <div className="myProfile">
+        <img className="profilePhoto" src={props.ourUser.photo} alt=""/>
         <p>{props.ourUser.name}</p>
         <button>Inbox</button> <br/>
         <button>My Profile</button>
       </div>
+      <div className="listUsers">
         {mappedUsers}
+      </div>
     </div>
   )
 }

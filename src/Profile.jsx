@@ -1,5 +1,9 @@
 import React from 'react';
+<<<<<<< HEAD
 import Skill from './Skill';
+=======
+import {Link} from 'react-router-dom';
+>>>>>>> 55a3cd6ca9a7f6ed94adf00cdd954c70388f5e19
 
 function Profile(props) {
 
@@ -38,6 +42,7 @@ function Profile(props) {
 
   return(
     <div>
+      <Link to="/list"> Back </Link>
       <div>
         {photo}
       </div>
