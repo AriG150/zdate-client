@@ -24,7 +24,14 @@ function Profile(props) {
       </div>
       <div>
         My Bio: {props.selectedUser.bio}
-      </div>               
+      </div>   
+      <div>
+        Age: {props.selectedUser.age || 24}
+      </div>  
+      <div>
+        Gender: {props.selectedUser.gender || 'Male'}
+      </div> 
+
     </div>
   }
   
