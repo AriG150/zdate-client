@@ -4,6 +4,7 @@
 
 
 .body {
+  color: white;
   background-image: url('https://imgur.com/v4DHaEp.png');
   background-size: cover;
   height: 200vh;
@@ -38,7 +39,8 @@
 }
 
 .inbox{
-  padding: 15px;
+  padding: 5px 20px;
+  margin: 25px 0;
   text-align: center;
 }
 
@@ -68,9 +70,13 @@
 .userInfo {
   display: flex;
   border: 1px solid black;
-  width: 40%;
+  width: 60%;
+}
+
+.userBio{
+  padding: 2em;
 }
 
 .link{
-  color: rgb(14, 14, 126);
+  color: #F37402;
 }

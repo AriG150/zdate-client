@@ -15,7 +15,7 @@ function List(props){
         <div>
           <Link onClick={() => props.setUserId(user._id)} key={id} to="/profile" className="link">{user.name} </Link>
         </div>   
-        <div>
+        <div className="userBio">
           {user.bio}
         </div>
       </div>
@@ -29,13 +29,12 @@ function List(props){
       <Link to="/"><img src="https://imgur.com/Ucg3ViS.png" alt=""/></Link>
       </div>
       <div className="bio">
-        <button classNae="inbox">Inbox</button>
+        <button className="inbox">Inbox</button>
         <img src={props.ourUser.photo} className="profilePic"/>
-        {/* <p>{props.ourUser.name}</p> */}
       </div>
       <div className="search">
         <form action="POST" className="form">
-          <input type="text" name="search" size="60" />
+          <input type="text" name="search" size="90" />
           <button type="submit">Enter</button>
         </form>
       </div>

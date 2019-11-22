@@ -1,32 +1,11 @@
-.material-icons.md-48 {
-  font-size: 48px; 
-}
-
-.normal {
-  border: none
-}
-
-.happyhighlight {
-  border: 5px solid green
-}
-
-.sadhighlight {
-  border: 5px solid red
-}
-
-.message {
-  color: green;
-  font-size: 16px;
-}
-
 .profile {
+  color: white;
   text-align: center;
   font-size: 1.5em;
   background-image: url('https://imgur.com/v4DHaEp.png');
   background-size: cover;
-  height: 130vh;
-  margin: 0;
-  
+  height: 140vh;
+  margin: 0; 
 }
 
 .profile img {
@@ -45,11 +24,32 @@ li {
   padding: 5px 0;
 }
 
-.link{
-  color: rgb(56, 56, 206);
+.message {
+  color: chartreuse;
+  font-size: 1.5em;
+}
+
+.material-icons.md-48 {
+  font-size: 48px; 
+}
+
+.normal {
+  border: none
+}
+
+.happyhighlight {
+  border: 5px solid green
+}
+
+.sadhighlight {
+  border: 5px solid red
 }
 
 .chat{
   width: 30em;
   height: 7em;
+}
+
+.link{
+  color: #F37402;
 }
