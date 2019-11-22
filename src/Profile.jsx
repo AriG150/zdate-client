@@ -2,6 +2,8 @@ import React from 'react';
 import Skill from './Skill';
 import {Link} from 'react-router-dom';
 import './css/Profile.css';
+import Chat from './Chat';
+import Buttons from './Buttons';
 
 
 
@@ -50,8 +52,9 @@ function Profile(props) {
   return(
     <div>
       <Link to="/list"> Back </Link>
-      <i class="material-icons md-48">sentiment_satisfied_alt</i> 
-      <i class="material-icons md-48">sentiment_very_dissatisfied </i>
+      
+      {/* <i class="material-icons md-48">sentiment_satisfied_alt</i>  */}
+      {/* <i class="material-icons md-48">sentiment_very_dissatisfied </i> */}
       <div>
         {photo}
       </div>
@@ -61,15 +64,8 @@ function Profile(props) {
           {skills}
         </ul>
       </div>
-      <form >
-        <label> 
-          <div>
-            Say Hello to :
-          </div> <br/>
-          <textarea  />
-        </label> <br/>
-        <input type="submit" value="Submit" />
-      </form>
+      <Buttons />
+      {/* <Chat /> */}
     </div>
 
   )
