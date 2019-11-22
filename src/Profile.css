@@ -1,3 +1,20 @@
 .material-icons.md-48 {
   font-size: 48px; 
 }
+
+.normal {
+  border: none
+}
+
+.happyhighlight {
+  border: 5px solid green
+}
+
+.sadhighlight {
+  border: 5px solid red
+}
+
+.message {
+  color: green;
+  font-size: 16px;
+}
