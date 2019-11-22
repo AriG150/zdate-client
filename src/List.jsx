@@ -13,7 +13,7 @@ function List(props){
       </div>
       <div>
         <div>
-          <Link onClick={() => props.setUserId(user._id)} key={id} to="/profile">{user.name} </Link>
+          <Link onClick={() => props.setUserId(user._id)} key={id} to="/profile" className="link">{user.name} </Link>
         </div>   
         <div>
           {user.bio}
@@ -26,12 +26,12 @@ function List(props){
   return(
     <div className="body">
       <div className="logo">
-        "logo"
+      <Link to="/"><img src="https://imgur.com/Ucg3ViS.png" alt=""/></Link>
       </div>
       <div className="bio">
+        <button classNae="inbox">Inbox</button>
         <img src={props.ourUser.photo} className="profilePic"/>
         {/* <p>{props.ourUser.name}</p> */}
-        <button>Inbox</button>
       </div>
       <div className="search">
         <form action="POST" className="form">
@@ -43,13 +43,12 @@ function List(props){
         {mappedUsers}
       </div>
       <div className="sidebar">
-        <form method="post">
+        <form method="post" className="searchForm">
           Survival Skills <br/>
           <input type="checkbox" name="Weapon" id=""/> Weapon <br/>
           <input type="checkbox" name="Cooking"/> Cooking <br/>
           <input type="checkbox" name="First Aid" id=""/> First Aid <br/>
-          <input type="checkbox" name="Rope Abilities" id=""/> Rope Abilities <br/>
-          <input type="checkbox" name="KnifeAbilities" id=""/> Knife Abilities <br/>
+          <input type="checkbox" name="Basket Weaving" id=""/> Basket Weaving <br/>
         </form>
       </div>
     </div>

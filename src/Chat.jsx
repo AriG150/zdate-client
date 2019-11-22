@@ -34,7 +34,7 @@ class Chat extends React.Component {
                         Say Hello:
                     </div> 
                     <br/>
-                    <textarea value={this.state.textValue} onChange={this.handleChange}  />
+                    <textarea className="chat" value={this.state.textValue} onChange={this.handleChange}  />
                 </label> 
                 <br/>
             <input type="submit" value="Submit" />

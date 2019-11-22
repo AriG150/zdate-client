@@ -4,6 +4,10 @@
 
 
 .body {
+  background-image: url('https://imgur.com/v4DHaEp.png');
+  background-size: cover;
+  height: 200vh;
+  margin: 0;
   display: grid;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.5em;
@@ -17,6 +21,7 @@
 
 .logo{
   grid-area: logo;
+  text-align: center;
 }
 
 .bio {
@@ -26,12 +31,25 @@
 }
 
 .profilePic{
-  border-radius: 50%
+  border-radius: 50%;
+  /* text-align: center; */
+  height: 150px;
+  width: 150px;
 }
+
+.inbox{
+  padding: 15px;
+  text-align: center;
+}
+
 .sidebar {
   grid-area: sidebar;
   /* justify-content: stretch; */
 
+}
+
+.searchForm {
+  text-align: center;
 }
 
 .search{
@@ -53,3 +71,6 @@
   width: 40%;
 }
 
+.link{
+  color: rgb(14, 14, 126);
+}

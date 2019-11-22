@@ -21,6 +21,11 @@
 
 .profile {
   text-align: center;
+  font-size: 1.5em;
+  background-image: url('https://imgur.com/v4DHaEp.png');
+  background-size: cover;
+  height: 130vh;
+  margin: 0;
   
 }
 
@@ -38,4 +43,13 @@ ul {
 
 li {
   padding: 5px 0;
+}
+
+.link{
+  color: rgb(56, 56, 206);
+}
+
+.chat{
+  width: 30em;
+  height: 7em;
 }
